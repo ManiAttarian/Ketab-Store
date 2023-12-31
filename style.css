@@ -1,0 +1,192 @@
+@font-face {
+    font-family: ketabStoreFont;
+    src: url('Fonts/Yekan.ttf');
+}
+
+body {
+    direction: rtl;
+    font-family:ketabStoreFont;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.501);
+
+}
+
+.logo-link {
+
+    color: black;
+}
+
+.logo-link img {
+    width: 90px;
+margin-right: 10%;
+}
+
+.title {
+    position: absolute;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.nav-div {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.nav {
+    font-size: 1.2em;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav li {
+   display: inline-block;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+
+
+
+.nav a {
+    color: black;
+}
+
+.nav li:hover {
+    border-bottom: 0.1px solid;
+
+}
+
+
+.main {
+    width: 75%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    gap: 80%;
+}
+
+.container a {
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.main h2 {
+    display: inline-block;
+    font-size:1.5em;
+    margin: 30px;
+} 
+
+.container-phone {
+    display: none;
+}
+
+.more {
+    color: black;
+}
+
+.more:hover {
+    border-bottom: 0.1px solid;
+}
+
+div.book-img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+div.book-img:hover {
+    border: 1px solid #777;
+}
+
+div.book-img img {
+    width: 100%;
+  height: auto; 
+}
+
+div.desc {
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+  }
+
+.books {
+    display: flex;
+    justify-content:space-around;
+
+  } 
+  
+.dropdown {
+    display: block;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    margin-right: 0;
+    width: 150%;
+    position: absolute;
+    display: none;
+    z-index: 1px;
+    background-color: white;  
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    text-align: right;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+.phone-nav {
+list-style: none;
+}    
+
+.phone-nav-div {
+    float: right;
+   display:flex;
+   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .books {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }  
+    .container {
+        width: 100%;
+        display: flex;
+        border-top: 1px solid rgb(128, 128, 128);
+        justify-content: center;
+    }
+    .container a {
+       display: none;
+    }
+
+    .container-phone {
+        margin-top: 5%;
+        font-size: 1.2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav li{
+       display: block;
+    }
+}
